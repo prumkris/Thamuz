@@ -1,0 +1,335 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body layout */
+body {
+    background-color: rgb(65, 57, 57);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 357;
+    font-style: normal;
+}
+header {
+    position: sticky;
+    top: 0;
+}
+
+/* Navbar */
+.nav {
+    background-color: rgba(157, 0, 0, 0.75);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(251, 48, 3);
+    padding: 5px 20px;
+    font-size: larger;
+
+}
+
+/* Navbar logo */
+.nav_item1 img {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 10px;
+    position: sticky;
+    top: 0;
+}
+
+/* Navbar links */
+.nav_item2 a,
+.nav_item3 a {
+    color: rgb(255, 170, 0);
+    font-weight: bold;
+    text-decoration: underline;
+    position: sticky;
+    top: 0;
+}
+
+/* Spacing adjustments */
+.nav_item3 a {
+    padding: 0 30px 0 60px;
+    color: orange;
+    position: sticky;
+    top: 0;
+}
+
+/* Top image header */
+.imageT {
+    width: 100%;
+    height: 300px;
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(75, 33, 0, 0.5)),
+    url("./Thamuz_29.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(255, 98, 0);
+}
+
+/* Image text wrapper */
+.Timg {
+    padding-top: 120px;
+}
+
+/* Main heading text */
+.Ttext {
+    font-weight: 800;
+    font-size: x-large;
+    color: rgb(165, 4, 4);
+    padding-left: 40px;
+    text-shadow: 
+        1px 1px 5px rgb(255, 225, 0),
+       -2px 2px 5px rgb(255, 174, 0),
+        2px -2px 5px red;
+}
+
+/* Underline styling */
+.Hard {
+    color: rgb(73, 73, 73);
+    text-decoration: underline rgb(155, 0, 0); 
+}
+
+/* Message section (not styled here) */
+#msgtotrako {}
+
+/* Thamuz message section */
+.Thamuz_Msg {
+    /* display: flex; */
+}
+
+
+/* Card container */
+.card {
+    width: 90%;
+    max-width: 1000px;
+    height: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 24px;
+    background-color: rgb(194, 49, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    display: block;
+    width: 511px;
+    height: 300px;
+    border-radius: 20px;
+    border: 10px solid rgb(94, 0, 0);
+    margin: auto;
+
+}
+
+/* Card text */
+.TextCard {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: rgb(228, 121, 0);
+    padding: 0px;
+    margin: 15px;
+    border-radius: 20px;
+    color: rgb(150, 20, 0);
+    font-size: 30px;
+    font-weight: 900;
+    transition: mex-height 1s ease-in-out, opacity 1s ease-in-out, padding 1s ease-in-out;
+}
+.TextCard.show {
+    opacity: 1;
+    max-height: 600px;
+    padding: 20px;
+}
+
+/* Audio player */
+audio {
+    width: 90%;
+    height: 50px;
+    background-color: #434343;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2.5% auto;
+    display: block;
+}
+
+/* Quote styling */
+.quote {
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkred;
+}
+
+/* Message transition bar */
+.msgTra {
+    background-color: rgb(188, 80, 3);
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+    color: rgb(71, 71, 71);
+    font-weight: 800;
+}
+.btn.show {
+    background-color: rgba(255, 155, 62, 0);
+    color: black;
+    width: 100%;
+    height: 60px;
+    border: none;
+    transition: 1s;
+    border: rgb(255, 230, 0) 4px solid;
+    font-size: large;
+    font-weight: 700;
+    color:rgb(255, 191, 0) ;
+    border-radius: 30px;
+}
+.btn.show:hover {
+    background-color: rgb(255, 191, 0);
+    color: black;
+    width: 100%;
+    height: 60px;
+    border: none;
+    transition: 1s;
+    border: rgb(255, 191, 0) 4px solid;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 30px;
+}
+.btn {
+    background-color: rgba(255, 155, 62, 0);
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: 1s;
+    border: rgb(255, 230, 0) 4px solid;
+    font-size: large;
+    font-weight: 700;
+    color:rgb(255, 191, 0) ;
+    border-radius: 20px;
+    margin: auto;
+}
+.btn:hover {
+    background-color: rgb(255, 191, 0);
+    border: rgb(255, 0, 0) 4px solid;
+    color: black;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size:x-large;
+    font-weight: 700;
+    border-radius: 20px;
+    margin: auto;
+
+}
+/* .box {
+    height: 1000px;
+    background-color: white;
+} */
+.anim {
+    width: 100%;
+    background-color: rgb(251, 181, 83);
+    height: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;
+ }
+.hb_anim {
+    background-color: rgb(251, 181, 83);
+    width: 50%;
+    animation: scrolling 5s infinite linear;
+    text-align: center;
+
+    
+}
+@keyframes scrolling {
+    0% {
+        transform: translateX(-50%);
+        color: red;
+    }
+    25% {
+        color: orange;
+    }
+    50%{
+        transform: translateX(50%);
+        color: rgb(0, 132, 255);
+    }
+    75% {
+        transform:translateX(0%)
+    }
+    100% {
+        transform: translateX(-50%);
+        color: rgb(131, 0, 0);
+    }
+}
+
+
+
+
+.myText {
+    background-color: rgb(225, 215, 178);
+    width: 90%;
+    margin: 5% 5% 20px 5%;
+    font-size: 30px;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    border: brown 4px solid;
+    border-radius: 25px;
+}
+.text {
+    width: 100%;text-decoration: underline 2px;
+
+}
+.myText img {
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: auto;
+    border: black 2px solid;
+    border-radius: 24px;
+}
+.Kris {
+    width: auto;
+    background-color: goldenrod;
+    margin-right: auto;
+    padding: 5px;
+
+
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+.footer {
+  background-color: #710000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  position: relative; /* or fixed/absolute depending on use case */
+  bottom: 0;
+  width: 100%;
+  font-size: larger;
+  font-weight: 800;
+  padding: 40px;
+}
